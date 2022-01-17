@@ -1,0 +1,16 @@
+export default {
+    "root": true,
+    "extends": ["eslint:recommended","google"],
+    "env": {
+        "node": true,
+        "es6": true,
+    },
+    "rules": {
+        "indent": ["error", 2, {}],
+        "quotes": ["off"],
+        "require-jsdoc": ["on"],
+    },
+    "parserOptions": {
+        "ecmaVersion": 2019,
+    },
+};

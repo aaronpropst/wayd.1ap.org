@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017-27019:27017-27019"
+    volumes:
+      # - ./scripts/:/scripts/
+      - ./data/mongo/:/data/db
+    entrypoint: mongod --bind_ip 0.0.0.0
